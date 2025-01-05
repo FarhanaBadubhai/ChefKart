@@ -22,7 +22,6 @@ A Node.js-based REST API that implements basic Instagram-like functionality with
 - Express.js
 - PostgreSQL
 - Sequelize ORM
-- Jest (Testing Framework)
 
 ## Database Schema
 
