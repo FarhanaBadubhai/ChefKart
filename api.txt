@@ -1,0 +1,40 @@
+POST "http://localhost:3000/api/users"
+  
+{
+    "name": "Farhana",
+    "mobileNumber": "98778287827",
+    "address": "123 street"
+}
+
+
+GET http://localhost:3000/api/users
+
+GET http://localhost:3000/api/users
+
+GET http://localhost:3000/api/posts
+
+
+POST http://localhost:3000/api/posts
+
+
+
+{
+    "title": "My First Post",
+    "description": "This is a test post",
+    "userId": 1,
+    "images": ["image1.jpg", "image2.jpg"]
+}
+
+
+PUT http://localhost:3000/api/posts/1
+
+
+
+{
+    "title": "Updated Post",
+    "description": "Updated description",
+    "images": ["newimage1.jpg"]
+}
+
+
+DELETE http://localhost:3000/api/posts/1

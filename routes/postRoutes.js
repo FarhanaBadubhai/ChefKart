@@ -10,6 +10,17 @@ router.get('/posts', async (req, res) => {
     res.json(posts);
   });
 
+// Add this route at the beginning of your routes
+router.get('/posts/only', async (req, res) => {
+  try {
+      const posts = await Post.findAll({
+          attributes: ['id', 'title', 'description', 'images', 'createdAt', 'updatedAt']
+      });
+      res.json(posts);
+  } catch (error) {
+      res.status(500).json({ error: error.message });
+  }
+});
 
 
   router.get('/users',async (req, res) => {
